@@ -8,8 +8,16 @@
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
     <form method="post" action="/formsub" enctype="multipart/form-data">
-      <input type="text" placeholder="filename">
-      <input type="file">
+      <input type="text" placeholder="filename" name="desc">
+      <input type="file" name="meme">
+      <input type="submit" value="submit">
+    </form>
+    <hr>
+     <form method="post" action="/formsubArr" enctype="multipart/form-data">
+      <input type="text" placeholder="filename" name="desc">
+      <input type="file" name="meme">
+      <input type="file" name="meme">
+      <input type="submit" value="submit">
     </form>
   </body>
 </html>
